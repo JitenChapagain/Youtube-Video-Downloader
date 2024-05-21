@@ -1,17 +1,49 @@
-<!DOCTYPE html> 
-<html> 
-<body> 
-  
-<h1>Youtube video downloader</h1> 
-  
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 20px;
+    }
+    
+    h1 {
+        color: #333;
+    }
+    
+    form {
+        margin-top: 30px;
+    }
+    
+    label {
+        font-weight: bold;
+    }
+    
+    input[type="text"] {
+        padding: 8px;
+        width: 300px;
+    }
+    
+    input[type="submit"] {
+        padding: 8px 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }</style>
+</head>
+<body>
+    <h1>Youtube video downloader</h1> 
 <form action="" method="post"> 
   {% csrf_token %} 
   
   <label for="link">Enter URL:</label> 
   <input type="text" id="link" name="link"><br><br> 
   <input type="submit" value="Submit"> 
-</form> 
-  
-</body> 
+</form>
+
+</body>
 </html>
